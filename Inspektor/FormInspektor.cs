@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gos_avtoinspekciya.Authorization
 {
-    public partial class FormMenu : Form
+    public partial class FormInspektor : Form
     {
-        public FormMenu()
+        public FormInspektor()
         {
             InitializeComponent();
         }

@@ -52,7 +52,7 @@ namespace Gos_avtoinspekciya.Authorization
              
                 if (table.Rows.Count > 0)
                 {
-                    Form ifrm = new FormMenu();
+                    Form ifrm = new FormInspektor();
                     ifrm.Left = this.Left; // задаём открываемой форме позицию слева равную позиции текущей формы
                     ifrm.Top = this.Top; // задаём открываемой форме позицию сверху равную позиции текущей формы
                     ifrm.Show(); // отображаем Form2

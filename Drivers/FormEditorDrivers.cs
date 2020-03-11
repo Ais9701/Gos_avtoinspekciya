@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Gos_avtoinspekciya.Authorization
 {
-    public partial class FormInspertor : Form
+    public partial class FormEditorDrivers : Form
     {
-        public FormInspertor()
+        public FormEditorDrivers()
         {
             InitializeComponent();
         }

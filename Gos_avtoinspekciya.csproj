@@ -52,11 +52,11 @@
     <Compile Include="Drivers\FormDrivers.Designer.cs">
       <DependentUpon>FormDrivers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu\FormMenu.cs">
+    <Compile Include="Inspektor\FormInspektor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu\FormMenu.Designer.cs">
-      <DependentUpon>FormMenu.cs</DependentUpon>
+    <Compile Include="Inspektor\FormInspektor.Designer.cs">
+      <DependentUpon>FormInspektor.cs</DependentUpon>
     </Compile>
     <Compile Include="Class DB\ClassDB.cs" />
     <Compile Include="Authorization\FormAuthorization.cs">
@@ -65,11 +65,11 @@
     <Compile Include="Authorization\FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inspektor\FormInspertor.cs">
+    <Compile Include="Drivers\FormEditorDrivers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inspektor\FormInspertor.Designer.cs">
-      <DependentUpon>FormInspertor.cs</DependentUpon>
+    <Compile Include="Drivers\FormEditorDrivers.Designer.cs">
+      <DependentUpon>FormEditorDrivers.cs</DependentUpon>
     </Compile>
     <Compile Include="Gos_avto_inspekciyaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -84,11 +84,11 @@
     <EmbeddedResource Include="Drivers\FormDrivers.resx">
       <DependentUpon>FormDrivers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inspektor\FormInspertor.resx">
-      <DependentUpon>FormInspertor.cs</DependentUpon>
+    <EmbeddedResource Include="Drivers\FormEditorDrivers.resx">
+      <DependentUpon>FormEditorDrivers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu\FormMenu.resx">
-      <DependentUpon>FormMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Inspektor\FormInspektor.resx">
+      <DependentUpon>FormInspektor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gibdd_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EditorDrivers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

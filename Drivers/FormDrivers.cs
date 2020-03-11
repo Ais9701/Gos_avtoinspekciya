@@ -39,7 +39,7 @@ namespace Gos_avtoinspekciya.Authorization
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormInspertor f14 = new FormInspertor();
+            FormEditorDrivers f14 = new FormEditorDrivers();
             f14.StartPosition = FormStartPosition.CenterScreen;
             f14.ShowDialog(this);
         }
