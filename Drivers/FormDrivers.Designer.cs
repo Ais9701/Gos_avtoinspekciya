@@ -105,54 +105,54 @@
             id_driversLabel.AutoSize = true;
             id_driversLabel.Location = new System.Drawing.Point(84, 71);
             id_driversLabel.Name = "id_driversLabel";
-            id_driversLabel.Size = new System.Drawing.Size(75, 20);
+            id_driversLabel.Size = new System.Drawing.Size(90, 20);
             id_driversLabel.TabIndex = 1;
-            id_driversLabel.Text = "id drivers:";
+            id_driversLabel.Text = "Водитель:";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
             nameLabel.Location = new System.Drawing.Point(84, 103);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(53, 20);
+            nameLabel.Size = new System.Drawing.Size(44, 20);
             nameLabel.TabIndex = 3;
-            nameLabel.Text = "name:";
+            nameLabel.Text = "Имя:";
             // 
             // surnameLabel
             // 
             surnameLabel.AutoSize = true;
             surnameLabel.Location = new System.Drawing.Point(84, 135);
             surnameLabel.Name = "surnameLabel";
-            surnameLabel.Size = new System.Drawing.Size(75, 20);
+            surnameLabel.Size = new System.Drawing.Size(85, 20);
             surnameLabel.TabIndex = 5;
-            surnameLabel.Text = "surname:";
+            surnameLabel.Text = "Фамилия:";
             // 
             // middlenameLabel
             // 
             middlenameLabel.AutoSize = true;
             middlenameLabel.Location = new System.Drawing.Point(84, 167);
             middlenameLabel.Name = "middlenameLabel";
-            middlenameLabel.Size = new System.Drawing.Size(99, 20);
+            middlenameLabel.Size = new System.Drawing.Size(87, 20);
             middlenameLabel.TabIndex = 7;
-            middlenameLabel.Text = "middlename:";
+            middlenameLabel.Text = "Отчество:";
             // 
             // passport_serialLabel
             // 
             passport_serialLabel.AutoSize = true;
             passport_serialLabel.Location = new System.Drawing.Point(84, 199);
             passport_serialLabel.Name = "passport_serialLabel";
-            passport_serialLabel.Size = new System.Drawing.Size(116, 20);
+            passport_serialLabel.Size = new System.Drawing.Size(135, 20);
             passport_serialLabel.TabIndex = 9;
-            passport_serialLabel.Text = "passport serial:";
+            passport_serialLabel.Text = "Серия паспорта:";
             // 
             // passport_numberLabel
             // 
             passport_numberLabel.AutoSize = true;
             passport_numberLabel.Location = new System.Drawing.Point(84, 231);
             passport_numberLabel.Name = "passport_numberLabel";
-            passport_numberLabel.Size = new System.Drawing.Size(133, 20);
+            passport_numberLabel.Size = new System.Drawing.Size(138, 20);
             passport_numberLabel.TabIndex = 11;
-            passport_numberLabel.Text = "passport number:";
+            passport_numberLabel.Text = "Номер паспорта:";
             // 
             // postcodeLabel
             // 
@@ -168,72 +168,72 @@
             addressLabel.AutoSize = true;
             addressLabel.Location = new System.Drawing.Point(84, 295);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(70, 20);
+            addressLabel.Size = new System.Drawing.Size(61, 20);
             addressLabel.TabIndex = 15;
-            addressLabel.Text = "address:";
+            addressLabel.Text = "Адрес:";
             // 
             // address_lifeLabel
             // 
             address_lifeLabel.AutoSize = true;
             address_lifeLabel.Location = new System.Drawing.Point(84, 327);
             address_lifeLabel.Name = "address_lifeLabel";
-            address_lifeLabel.Size = new System.Drawing.Size(94, 20);
+            address_lifeLabel.Size = new System.Drawing.Size(157, 20);
             address_lifeLabel.TabIndex = 17;
-            address_lifeLabel.Text = "address life:";
+            address_lifeLabel.Text = "Место проживания:";
             // 
             // companyLabel
             // 
             companyLabel.AutoSize = true;
             companyLabel.Location = new System.Drawing.Point(84, 359);
             companyLabel.Name = "companyLabel";
-            companyLabel.Size = new System.Drawing.Size(77, 20);
+            companyLabel.Size = new System.Drawing.Size(88, 20);
             companyLabel.TabIndex = 19;
-            companyLabel.Text = "company:";
+            companyLabel.Text = "Компания:";
             // 
             // jobnameLabel
             // 
             jobnameLabel.AutoSize = true;
             jobnameLabel.Location = new System.Drawing.Point(84, 391);
             jobnameLabel.Name = "jobnameLabel";
-            jobnameLabel.Size = new System.Drawing.Size(74, 20);
+            jobnameLabel.Size = new System.Drawing.Size(147, 20);
             jobnameLabel.TabIndex = 21;
-            jobnameLabel.Text = "jobname:";
+            jobnameLabel.Text = "Название работы:";
             // 
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
             phoneLabel.Location = new System.Drawing.Point(84, 423);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(58, 20);
+            phoneLabel.Size = new System.Drawing.Size(83, 20);
             phoneLabel.TabIndex = 23;
-            phoneLabel.Text = "phone:";
+            phoneLabel.Text = "Телефон:";
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
             emailLabel.Location = new System.Drawing.Point(84, 455);
             emailLabel.Name = "emailLabel";
-            emailLabel.Size = new System.Drawing.Size(50, 20);
+            emailLabel.Size = new System.Drawing.Size(101, 20);
             emailLabel.TabIndex = 25;
-            emailLabel.Text = "email:";
+            emailLabel.Text = "Элек.почта:";
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Location = new System.Drawing.Point(84, 487);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(90, 20);
+            descriptionLabel.Size = new System.Drawing.Size(98, 20);
             descriptionLabel.TabIndex = 27;
-            descriptionLabel.Text = "description:";
+            descriptionLabel.Text = "Замечания:";
             // 
             // regionLabel
             // 
             regionLabel.AutoSize = true;
             regionLabel.Location = new System.Drawing.Point(84, 519);
             regionLabel.Name = "regionLabel";
-            regionLabel.Size = new System.Drawing.Size(57, 20);
+            regionLabel.Size = new System.Drawing.Size(66, 20);
             regionLabel.TabIndex = 29;
-            regionLabel.Text = "region:";
+            regionLabel.Text = "Регион:";
             // 
             // gos_avto_inspekciyaDataSet
             // 
