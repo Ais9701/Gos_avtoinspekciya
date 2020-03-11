@@ -52,7 +52,7 @@ namespace Gos_avtoinspekciya.Authorization
              
                 if (table.Rows.Count > 0)
                 {
-                    Form ifrm = new FormInspertor();
+                    Form ifrm = new FormMenu();
                     ifrm.Left = this.Left; // задаём открываемой форме позицию слева равную позиции текущей формы
                     ifrm.Top = this.Top; // задаём открываемой форме позицию сверху равную позиции текущей формы
                     ifrm.Show(); // отображаем Form2
@@ -84,6 +84,12 @@ namespace Gos_avtoinspekciya.Authorization
             this.Close();
         }
         int a = 0, b = 15, s = 0, d = 15;
+
+        private void FormAuthorization_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (b > 0)

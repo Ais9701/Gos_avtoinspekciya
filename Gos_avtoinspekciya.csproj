@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drivers\FormDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers\FormDrivers.Designer.cs">
+      <DependentUpon>FormDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class DB\ClassDB.cs" />
     <Compile Include="Authorization\FormAuthorization.cs">
       <SubType>Form</SubType>
@@ -53,10 +65,10 @@
     <Compile Include="Authorization\FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="Authorization\FormInspertor.cs">
+    <Compile Include="Inspektor\FormInspertor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Authorization\FormInspertor.Designer.cs">
+    <Compile Include="Inspektor\FormInspertor.Designer.cs">
       <DependentUpon>FormInspertor.cs</DependentUpon>
     </Compile>
     <Compile Include="Gos_avto_inspekciyaDataSet.Designer.cs">
@@ -68,6 +80,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Authorization\FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\FormDrivers.resx">
+      <DependentUpon>FormDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inspektor\FormInspertor.resx">
+      <DependentUpon>FormInspertor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
