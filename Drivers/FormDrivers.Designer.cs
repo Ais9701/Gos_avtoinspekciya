@@ -79,6 +79,7 @@
             this.regionTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.but = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             id_driversLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
@@ -98,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingNavigator)).BeginInit();
             this.driversBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // id_driversLabel
@@ -285,7 +287,7 @@
             this.driversBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.driversBindingNavigator.Name = "driversBindingNavigator";
             this.driversBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.driversBindingNavigator.Size = new System.Drawing.Size(891, 37);
+            this.driversBindingNavigator.Size = new System.Drawing.Size(891, 32);
             this.driversBindingNavigator.TabIndex = 0;
             this.driversBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -527,11 +529,22 @@
             this.but.UseVisualStyleBackColor = true;
             this.but.Click += new System.EventHandler(this.but_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Gos_avtoinspekciya.Properties.Resources.gibdd_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(601, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(278, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 572);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.but);
             this.Controls.Add(this.button1);
             this.Controls.Add(id_driversLabel);
@@ -575,6 +588,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingNavigator)).EndInit();
             this.driversBindingNavigator.ResumeLayout(false);
             this.driversBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -616,5 +630,6 @@
         private System.Windows.Forms.TextBox regionTextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button but;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

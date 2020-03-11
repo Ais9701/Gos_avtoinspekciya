@@ -57,7 +57,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Gos_avtoinspekciya.Properties.Resources.gibdd_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(278, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

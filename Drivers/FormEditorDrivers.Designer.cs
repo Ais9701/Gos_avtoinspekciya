@@ -40,7 +40,6 @@
             this.driversDataGridView = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.butSave = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +58,7 @@
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.butBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gos_avto_inspekciyaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingNavigator)).BeginInit();
@@ -101,7 +101,7 @@
             this.driversBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorSeparator,
             this.bindingNavigatorAddNewItem});
-            this.driversBindingNavigator.Location = new System.Drawing.Point(351, 953);
+            this.driversBindingNavigator.Location = new System.Drawing.Point(351, 927);
             this.driversBindingNavigator.MoveFirstItem = null;
             this.driversBindingNavigator.MoveLastItem = null;
             this.driversBindingNavigator.MoveNextItem = null;
@@ -152,12 +152,12 @@
             this.driversDataGridView.Name = "driversDataGridView";
             this.driversDataGridView.RowHeadersWidth = 60;
             this.driversDataGridView.RowTemplate.Height = 28;
-            this.driversDataGridView.Size = new System.Drawing.Size(1924, 756);
+            this.driversDataGridView.Size = new System.Drawing.Size(1924, 721);
             this.driversDataGridView.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(758, 936);
+            this.button2.Location = new System.Drawing.Point(758, 910);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(196, 61);
             this.button2.TabIndex = 3;
@@ -167,7 +167,7 @@
             // 
             // butSave
             // 
-            this.butSave.Location = new System.Drawing.Point(516, 936);
+            this.butSave.Location = new System.Drawing.Point(516, 910);
             this.butSave.Name = "butSave";
             this.butSave.Size = new System.Drawing.Size(196, 61);
             this.butSave.TabIndex = 4;
@@ -175,20 +175,10 @@
             this.butSave.UseVisualStyleBackColor = true;
             this.butSave.Click += new System.EventHandler(this.butSave_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1716, 936);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 61);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Назад";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(754, 1002);
+            this.label2.Location = new System.Drawing.Point(754, 976);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 40);
             this.label2.TabIndex = 7;
@@ -333,14 +323,24 @@
             this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             this.dataGridViewTextBoxColumn15.Width = 147;
             // 
+            // butBack
+            // 
+            this.butBack.Location = new System.Drawing.Point(1707, 910);
+            this.butBack.Name = "butBack";
+            this.butBack.Size = new System.Drawing.Size(196, 61);
+            this.butBack.TabIndex = 10;
+            this.butBack.Text = "Назад";
+            this.butBack.UseVisualStyleBackColor = true;
+            this.butBack.Click += new System.EventHandler(this.butBack_Click);
+            // 
             // FormEditorDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1051);
+            this.Controls.Add(this.butBack);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.butSave);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.driversDataGridView);
@@ -375,7 +375,6 @@
         private System.Windows.Forms.DataGridView driversDataGridView;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button butSave;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -394,5 +393,6 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.Button butBack;
     }
 }

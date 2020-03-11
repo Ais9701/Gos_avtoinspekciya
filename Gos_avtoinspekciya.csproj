@@ -127,8 +127,6 @@
   <ItemGroup>
     <None Include="Resources\gibdd_logo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EditorDrivers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

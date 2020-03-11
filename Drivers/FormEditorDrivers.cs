@@ -59,14 +59,14 @@ namespace Gos_avtoinspekciya.Authorization
             System.Windows.Forms.Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void butBack_Click(object sender, EventArgs e)
         {
             // вызываем главную форму, которая открыла текущую, главная форма всегда = 0 - [0]
-            Form Menu = Application.OpenForms[2];
-            Menu.StartPosition = FormStartPosition.Manual; // меняем параметр StartPosition у Form1, иначе она будет использовать тот, который у неё прописан в настройках и всегда будет открываться по центру экрана
-            Menu.Left = this.Left; // задаём открываемой форме позицию слева равную позиции текущей формы
-            Menu.Top = this.Top; // задаём открываемой форме позицию сверху равную позиции текущей формы
-            Menu.Show(); // отображаем Form2
+            Form Drivers = Application.OpenForms[2];
+            Drivers.StartPosition = FormStartPosition.Manual; // меняем параметр StartPosition у Form1, иначе она будет использовать тот, который у неё прописан в настройках и всегда будет открываться по центру экрана
+            Drivers.Left = this.Left; // задаём открываемой форме позицию слева равную позиции текущей формы
+            Drivers.Top = this.Top; // задаём открываемой форме позицию сверху равную позиции текущей формы
+            Drivers.Show(); // отображаем Form2
             this.Hide();
         }
     }
