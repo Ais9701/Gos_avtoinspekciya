@@ -2948,7 +2948,7 @@ namespace Gos_avtoinspekciya.Gos_avto_inspekciyaDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Drivers] WHERE (([id_drivers] = @Original_id_drivers) AND ((@IsNull_name = 1 AND [name] IS NULL) OR ([name] = @Original_name)) AND ((@IsNull_surname = 1 AND [surname] IS NULL) OR ([surname] = @Original_surname)) AND ((@IsNull_middlename = 1 AND [middlename] IS NULL) OR ([middlename] = @Original_middlename)) AND ((@IsNull_passport_serial = 1 AND [passport_serial] IS NULL) OR ([passport_serial] = @Original_passport_serial)) AND ((@IsNull_passport_number = 1 AND [passport_number] IS NULL) OR ([passport_number] = @Original_passport_number)) AND ((@IsNull_postcode = 1 AND [postcode] IS NULL) OR ([postcode] = @Original_postcode)) AND ((@IsNull_address = 1 AND [address] IS NULL) OR ([address] = @Original_address)) AND ((@IsNull_address_life = 1 AND [address_life] IS NULL) OR ([address_life] = @Original_address_life)) AND ((@IsNull_company = 1 AND [company] IS NULL) OR ([company] = @Original_company)) AND ((@IsNull_jobname = 1 AND [jobname] IS NULL) OR ([jobname] = @Original_jobname)) AND ((@IsNull_phone = 1 AND [phone] IS NULL) OR ([phone] = @Original_phone)) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_description = 1 AND [description] IS NULL) OR ([description] = @Original_description)) AND ((@IsNull_region = 1 AND [region] IS NULL) OR ([region] = @Original_region)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Drivers] WHERE (([id_drivers] = @Original_id_drivers) AND ((@IsNull_name = 1 AND [name] IS NULL) OR ([name] = @Original_name)) AND ((@IsNull_surname = 1 AND [surname] IS NULL) OR ([surname] = @Original_surname)) AND ((@IsNull_middlename = 1 AND [middlename] IS NULL) OR ([middlename] = @Original_middlename)) AND ((@IsNull_passport_serial = 1 AND [passport_serial] IS NULL) OR ([passport_serial] = @Original_passport_serial)) AND ((@IsNull_passport_number = 1 AND [passport_number] IS NULL) OR ([passport_number] = @Original_passport_number)) AND ((@IsNull_postcode = 1 AND [postcode] IS NULL) OR ([postcode] = @Original_postcode)) AND ((@IsNull_address = 1 AND [address] IS NULL) OR ([address] = @Original_address)) AND ((@IsNull_address_life = 1 AND [address_life] IS NULL) OR ([address_life] = @Original_address_life)) AND ((@IsNull_company = 1 AND [company] IS NULL) OR ([company] = @Original_company)) AND ((@IsNull_jobname = 1 AND [jobname] IS NULL) OR ([jobname] = @Original_jobname)) AND ((@IsNull_phone = 1 AND [phone] IS NULL) OR ([phone] = @Original_phone)) AND ((@IsNull_email = 1 AND [email] IS NULL) OR ([email] = @Original_email)) AND ((@IsNull_description = 1 AND [description] IS NULL) OR ([description] = @Original_description)) AND ((@IsNull_region = 1 AND [region] IS NULL) OR ([region] = @Original_region)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_drivers", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_drivers", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -2981,7 +2981,7 @@ namespace Gos_avtoinspekciya.Gos_avto_inspekciyaDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_region", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "region", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Drivers] ([id_drivers], [name], [surname], [middlename], [passport_serial], [passport_number], [postcode], [address], [address_life], [company], [jobname], [phone], [email], [photo], [description], [region]) VALUES (@id_drivers, @name, @surname, @middlename, @passport_serial, @passport_number, @postcode, @address, @address_life, @company, @jobname, @phone, @email, @photo, @description, @region);
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Drivers] ([id_drivers], [name], [surname], [middlename], [passport_serial], [passport_number], [postcode], [address], [address_life], [company], [jobname], [phone], [email], [photo], [description], [region]) VALUES (@id_drivers, @name, @surname, @middlename, @passport_serial, @passport_number, @postcode, @address, @address_life, @company, @jobname, @phone, @email, @photo, @description, @region);
 SELECT id_drivers, name, surname, middlename, passport_serial, passport_number, postcode, address, address_life, company, jobname, phone, email, photo, description, region FROM Drivers WHERE (id_drivers = @id_drivers)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_drivers", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_drivers", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3002,31 +3002,31 @@ SELECT id_drivers, name, surname, middlename, passport_serial, passport_number, 
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@region", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "region", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Drivers] SET [id_drivers] = @id_drivers, [name] = @name, [surname] " +
-                "= @surname, [middlename] = @middlename, [passport_serial] = @passport_serial, [p" +
-                "assport_number] = @passport_number, [postcode] = @postcode, [address] = @address" +
-                ", [address_life] = @address_life, [company] = @company, [jobname] = @jobname, [p" +
-                "hone] = @phone, [email] = @email, [photo] = @photo, [description] = @description" +
-                ", [region] = @region WHERE (([id_drivers] = @Original_id_drivers) AND ((@IsNull_" +
-                "name = 1 AND [name] IS NULL) OR ([name] = @Original_name)) AND ((@IsNull_surname" +
-                " = 1 AND [surname] IS NULL) OR ([surname] = @Original_surname)) AND ((@IsNull_mi" +
-                "ddlename = 1 AND [middlename] IS NULL) OR ([middlename] = @Original_middlename))" +
-                " AND ((@IsNull_passport_serial = 1 AND [passport_serial] IS NULL) OR ([passport_" +
-                "serial] = @Original_passport_serial)) AND ((@IsNull_passport_number = 1 AND [pas" +
-                "sport_number] IS NULL) OR ([passport_number] = @Original_passport_number)) AND (" +
-                "(@IsNull_postcode = 1 AND [postcode] IS NULL) OR ([postcode] = @Original_postcod" +
-                "e)) AND ((@IsNull_address = 1 AND [address] IS NULL) OR ([address] = @Original_a" +
-                "ddress)) AND ((@IsNull_address_life = 1 AND [address_life] IS NULL) OR ([address" +
-                "_life] = @Original_address_life)) AND ((@IsNull_company = 1 AND [company] IS NUL" +
-                "L) OR ([company] = @Original_company)) AND ((@IsNull_jobname = 1 AND [jobname] I" +
-                "S NULL) OR ([jobname] = @Original_jobname)) AND ((@IsNull_phone = 1 AND [phone] " +
-                "IS NULL) OR ([phone] = @Original_phone)) AND ((@IsNull_email = 1 AND [email] IS " +
-                "NULL) OR ([email] = @Original_email)) AND ((@IsNull_description = 1 AND [descrip" +
-                "tion] IS NULL) OR ([description] = @Original_description)) AND ((@IsNull_region " +
-                "= 1 AND [region] IS NULL) OR ([region] = @Original_region)));\r\nSELECT id_drivers" +
-                ", name, surname, middlename, passport_serial, passport_number, postcode, address" +
-                ", address_life, company, jobname, phone, email, photo, description, region FROM " +
-                "Drivers WHERE (id_drivers = @id_drivers)";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [Drivers] SET [id_drivers] = @id_drivers, [name] = @name, [surname] = @sur" +
+                "name, [middlename] = @middlename, [passport_serial] = @passport_serial, [passpor" +
+                "t_number] = @passport_number, [postcode] = @postcode, [address] = @address, [add" +
+                "ress_life] = @address_life, [company] = @company, [jobname] = @jobname, [phone] " +
+                "= @phone, [email] = @email, [photo] = @photo, [description] = @description, [reg" +
+                "ion] = @region WHERE (([id_drivers] = @Original_id_drivers) AND ((@IsNull_name =" +
+                " 1 AND [name] IS NULL) OR ([name] = @Original_name)) AND ((@IsNull_surname = 1 A" +
+                "ND [surname] IS NULL) OR ([surname] = @Original_surname)) AND ((@IsNull_middlena" +
+                "me = 1 AND [middlename] IS NULL) OR ([middlename] = @Original_middlename)) AND (" +
+                "(@IsNull_passport_serial = 1 AND [passport_serial] IS NULL) OR ([passport_serial" +
+                "] = @Original_passport_serial)) AND ((@IsNull_passport_number = 1 AND [passport_" +
+                "number] IS NULL) OR ([passport_number] = @Original_passport_number)) AND ((@IsNu" +
+                "ll_postcode = 1 AND [postcode] IS NULL) OR ([postcode] = @Original_postcode)) AN" +
+                "D ((@IsNull_address = 1 AND [address] IS NULL) OR ([address] = @Original_address" +
+                ")) AND ((@IsNull_address_life = 1 AND [address_life] IS NULL) OR ([address_life]" +
+                " = @Original_address_life)) AND ((@IsNull_company = 1 AND [company] IS NULL) OR " +
+                "([company] = @Original_company)) AND ((@IsNull_jobname = 1 AND [jobname] IS NULL" +
+                ") OR ([jobname] = @Original_jobname)) AND ((@IsNull_phone = 1 AND [phone] IS NUL" +
+                "L) OR ([phone] = @Original_phone)) AND ((@IsNull_email = 1 AND [email] IS NULL) " +
+                "OR ([email] = @Original_email)) AND ((@IsNull_description = 1 AND [description] " +
+                "IS NULL) OR ([description] = @Original_description)) AND ((@IsNull_region = 1 AN" +
+                "D [region] IS NULL) OR ([region] = @Original_region)));\r\nSELECT id_drivers, name" +
+                ", surname, middlename, passport_serial, passport_number, postcode, address, addr" +
+                "ess_life, company, jobname, phone, email, photo, description, region FROM Driver" +
+                "s WHERE (id_drivers = @id_drivers)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_drivers", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_drivers", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3090,7 +3090,7 @@ SELECT id_drivers, name, surname, middlename, passport_serial, passport_number, 
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id_drivers, name, surname, middlename, passport_serial, passport_number, p" +
                 "ostcode, address, address_life, company, jobname, phone, email, photo, descripti" +
-                "on, region FROM dbo.Drivers";
+                "on, region FROM Drivers";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

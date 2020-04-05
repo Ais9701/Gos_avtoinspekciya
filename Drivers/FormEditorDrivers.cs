@@ -8,11 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace Gos_avtoinspekciya.Authorization
 {
     public partial class FormEditorDrivers : Form
     {
+
         public FormEditorDrivers()
         {
             InitializeComponent();
@@ -38,7 +41,18 @@ namespace Gos_avtoinspekciya.Authorization
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "gos_avto_inspekciyaDataSet.Drivers". При необходимости она может быть перемещена или удалена.
             this.driversTableAdapter.Fill(this.gos_avto_inspekciyaDataSet.Drivers);
-
+            SqlConnection con = new SqlConnection("Data Source='.\\SQLEXPRESS';Integrated Security = 'true'; Initial Catalog = 'Gos_avto_inspekciya'");
+ SqlCommand cmd = new SqlCommand("SELECT address FROM drivers", con);
+            con.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            AutoCompleteStringCollection SCollection = new
+           AutoCompleteStringCollection();
+            while (reader.Read())
+            {
+                SCollection.Add(reader.GetString(0));
+            }
+            textBoxavtozapolnenie.AutoCompleteCustomSource = SCollection;
+            con.Close();
         }
 
         private void butSave_Click(object sender, EventArgs e)
@@ -69,5 +83,37 @@ namespace Gos_avtoinspekciya.Authorization
             Drivers.Show(); // отображаем Form2
             this.Hide();
         }
+
+        private void driversDataGridView_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Удалить запись?", "Удаление", MessageBoxButtons.OKCancel,
+MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (dr == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void driversDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void driversDataGridView_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            }
+
+        private void textBoxavtozapolnenie_TextChanged(object sender, EventArgs e)
+        {
+            driversBindingSource.Filter = "address = \'" + textBoxavtozapolnenie.Text + "\'";
+        }
+
+        private void buttonotobrazitvse_Click(object sender, EventArgs e)
+        {
+            driversBindingSource.Filter = null;
+            textBoxavtozapolnenie.Clear();
+        }
     }
-}
+
+    }
+

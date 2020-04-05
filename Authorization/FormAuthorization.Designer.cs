@@ -69,18 +69,20 @@
             // loginLabel
             // 
             loginLabel.AutoSize = true;
-            loginLabel.Location = new System.Drawing.Point(207, 212);
+            loginLabel.Font = new System.Drawing.Font("Sitka Banner", 13.78723F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            loginLabel.Location = new System.Drawing.Point(207, 255);
             loginLabel.Name = "loginLabel";
-            loginLabel.Size = new System.Drawing.Size(59, 20);
+            loginLabel.Size = new System.Drawing.Size(98, 39);
             loginLabel.TabIndex = 1;
             loginLabel.Text = "Логин:";
             // 
             // passwordLabel
             // 
             passwordLabel.AutoSize = true;
-            passwordLabel.Location = new System.Drawing.Point(207, 277);
+            passwordLabel.Font = new System.Drawing.Font("Sitka Banner", 13.78723F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            passwordLabel.Location = new System.Drawing.Point(207, 320);
             passwordLabel.Name = "passwordLabel";
-            passwordLabel.Size = new System.Drawing.Size(71, 20);
+            passwordLabel.Size = new System.Drawing.Size(108, 39);
             passwordLabel.TabIndex = 3;
             passwordLabel.Text = "Пароль:";
             // 
@@ -222,30 +224,35 @@
             // 
             // butEnter
             // 
-            this.butEnter.Location = new System.Drawing.Point(374, 388);
+            this.butEnter.BackColor = System.Drawing.Color.SpringGreen;
+            this.butEnter.Font = new System.Drawing.Font("Sitka Banner", 12.25532F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butEnter.Location = new System.Drawing.Point(374, 449);
             this.butEnter.Name = "butEnter";
-            this.butEnter.Size = new System.Drawing.Size(116, 64);
+            this.butEnter.Size = new System.Drawing.Size(183, 75);
             this.butEnter.TabIndex = 5;
             this.butEnter.Text = "Войти";
-            this.butEnter.UseVisualStyleBackColor = true;
+            this.butEnter.UseVisualStyleBackColor = false;
             this.butEnter.Click += new System.EventHandler(this.butEnter_Click);
             // 
             // butExit
             // 
-            this.butExit.Location = new System.Drawing.Point(374, 458);
+            this.butExit.BackColor = System.Drawing.Color.SpringGreen;
+            this.butExit.Font = new System.Drawing.Font("Sitka Banner", 12.25532F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butExit.Location = new System.Drawing.Point(374, 530);
             this.butExit.Name = "butExit";
-            this.butExit.Size = new System.Drawing.Size(116, 65);
+            this.butExit.Size = new System.Drawing.Size(183, 75);
             this.butExit.TabIndex = 6;
             this.butExit.Text = "Выйти";
-            this.butExit.UseVisualStyleBackColor = true;
+            this.butExit.UseVisualStyleBackColor = false;
             this.butExit.Click += new System.EventHandler(this.butExit_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(268, 333);
+            this.label1.Font = new System.Drawing.Font("Sitka Banner", 10.21277F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(286, 376);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 40);
+            this.label1.Size = new System.Drawing.Size(318, 60);
             this.label1.TabIndex = 7;
             this.label1.Text = "После трех неудачных попыток,\r\nсистема заблокируется на 15 секунд\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -271,11 +278,15 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(370, 76);
+            this.label2.Font = new System.Drawing.Font("Sitka Banner", 19.91489F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(338, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(446, 20);
+            this.label2.Size = new System.Drawing.Size(541, 106);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Добро пожаловать в систему для ГОСАВТОИНСПЕКЦИИ";
+            this.label2.Text = "Добро пожаловать в систему \r\nдля ГОСАВТОИНСПЕКЦИИ";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.UseCompatibleTextRendering = true;
             // 
             // pictureBox1
             // 
@@ -289,17 +300,22 @@
             // 
             // txtboxlog
             // 
-            this.txtboxlog.Location = new System.Drawing.Point(374, 212);
+            this.txtboxlog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.21277F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtboxlog.ForeColor = System.Drawing.Color.Black;
+            this.txtboxlog.Location = new System.Drawing.Point(374, 264);
             this.txtboxlog.Name = "txtboxlog";
-            this.txtboxlog.Size = new System.Drawing.Size(183, 26);
+            this.txtboxlog.Size = new System.Drawing.Size(183, 30);
             this.txtboxlog.TabIndex = 10;
             this.txtboxlog.Text = "inspektor";
             // 
             // txtboxpas
             // 
-            this.txtboxpas.Location = new System.Drawing.Point(374, 274);
+            this.txtboxpas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.21277F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtboxpas.ForeColor = System.Drawing.Color.Black;
+            this.txtboxpas.Location = new System.Drawing.Point(374, 326);
             this.txtboxpas.Name = "txtboxpas";
-            this.txtboxpas.Size = new System.Drawing.Size(183, 26);
+            this.txtboxpas.PasswordChar = '*';
+            this.txtboxpas.Size = new System.Drawing.Size(183, 30);
             this.txtboxpas.TabIndex = 11;
             this.txtboxpas.Text = "inspektor";
             // 
@@ -307,7 +323,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 572);
+            this.ClientSize = new System.Drawing.Size(891, 615);
             this.Controls.Add(this.txtboxpas);
             this.Controls.Add(this.txtboxlog);
             this.Controls.Add(this.label2);
